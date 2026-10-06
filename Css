@@ -1,0 +1,67 @@
+/* ===== TOKENS =====
+   Conta do clamp (interpolação linear 360px -> 1280px):
+   vitrine: 28px -> 48px  | inclinação 20/920 = 2,174vw | base 28 - 0,02174*360 = 20,18px = 1,261rem
+   local:   26px -> 40px  | inclinação 14/920 = 1,522vw | base 26 - 0,01522*360 = 20,52px = 1,283rem */
+:root {
+    --azul: #2f6f96;            /* 5,4:1 com branco (o #5092b9 antigo dava 3,4:1) */
+    --papel: #f4f4f2;
+    --tinta: #2b2b2b;
+    --toque: 44px;
+    --fs-vitrine: clamp(1.75rem, 1.261rem + 2.174vw, 3rem);
+    --fs-local: clamp(1.625rem, 1.283rem + 1.522vw, 2.5rem);
+}
+
+/* ===== COMPARTILHADO: reset e base ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; color: var(--tinta); background: var(--papel); line-height: 1.6; }
+h1, h2, h3 { line-height: 1.2; }
+
+/* Mídia: vale para qualquer imagem que chegar depois */
+img, video { max-width: 100%; height: auto; display: block; }
+/* Caixa de recorte: mantém proporção e preenche sem distorcer */
+.recorte { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px; }
+
+/* Usuário: foco visível (anel duplo, lê-se em fundo claro e escuro) e área de toque */
+:focus-visible { outline: 3px solid #111; outline-offset: 2px; box-shadow: 0 0 0 2px #fff; }
+a, button { min-height: var(--toque); display: inline-flex; align-items: center; }
+nav ul, footer ul { list-style: none; }
+nav a, footer a { color: #fff; padding: 0 16px; border-radius: 4px; }
+nav a { text-decoration: none; }
+nav a:hover { background: rgba(255, 255, 255, .2); }
+footer a { text-decoration: underline; }
+header, footer { background: var(--azul); color: #fff; }
+
+/* ===== PÁGINA: LOCAL ===== */
+.pg-local header { padding: 20px; text-align: center; }
+.pg-local h1 { font-size: var(--fs-local); }
+.pg-local .subtitulo { margin-bottom: 15px; }
+.pg-local nav ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.pg-local main { max-width: 800px; margin: 0 auto; padding: 20px; }
+.pg-local section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.pg-local section h2 { color: var(--azul); margin-bottom: 10px; }
+.pg-local section ul { padding-left: 20px; }
+.pg-local blockquote { border-left: 4px solid var(--azul); padding-left: 15px; margin-top: 10px; font-style: italic; color: #555; }
+.pg-local .tabela-rolagem { overflow-x: auto; }
+.pg-local table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.pg-local th, .pg-local td { padding: 10px; text-align: left; border: 1px solid #ddd; }
+.pg-local th { background: #e8f5e9; color: var(--azul); }
+.pg-local footer { text-align: center; padding: 20px; }
+.pg-local footer h2 { margin-bottom: 10px; }
+.pg-local footer ul { margin-bottom: 15px; }
+@media (max-width: 500px) { .pg-local nav ul { flex-direction: column; align-items: center; } }
+
+/* ===== PÁGINA: VITRINE ===== */
+.pg-vitrine header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; }
+.pg-vitrine .logo { font-size: 1.4rem; font-weight: bold; }
+.pg-vitrine nav ul { display: flex; gap: 24px; }
+.pg-vitrine .destaque { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; min-height: 320px; padding: 40px 20px; background: var(--azul); color: #fff; }
+.pg-vitrine .destaque h1 { font-size: var(--fs-vitrine); margin-bottom: 12px; }
+.pg-vitrine .destaque p { max-width: 500px; margin-bottom: 20px; }
+.pg-vitrine .destaque button { padding: 0 28px; border: none; border-radius: 6px; background: #fff; color: var(--azul); font-weight: bold; cursor: pointer; }
+.pg-vitrine .cards { display: flex; flex-wrap: wrap; gap: 20px; padding: 40px; }
+.pg-vitrine .card { background: #fff; border-radius: 8px; padding: 20px; flex: 1 1 200px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+.pg-vitrine .card h2 { font-size: 1.17rem; color: var(--azul); margin-bottom: 8px; }
+.pg-vitrine footer { display: flex; flex-wrap: wrap; gap: 20px; padding: 30px 40px; }
+.pg-vitrine .coluna { flex: 1 1 150px; }
+.pg-vitrine .coluna.meio { flex-grow: 2; }
+.pg-vitrine footer h2 { font-size: 1rem; margin-bottom: 10px; }
