@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Página Inicial - Guia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pg-vitrine">
+
+<header>
+    <div class="logo">MeuSite</div>
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="local.html">Parque</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="destaque">
+        <h1>Bem-vindo ao MeuSite</h1>
+        <p>Uma página inicial simples, construída passo a passo para praticar Flexbox: direção, alinhamento, espaçamento e crescimento.</p>
+        <button type="button">Saiba mais</button>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h2>Rápido</h2>
+            <p>Estrutura leve, sem frameworks, só HTML e CSS puro.</p>
+        </div>
+        <div class="card">
+            <h2>Responsivo</h2>
+            <p>Os cards se ajustam automaticamente ao tamanho da tela.</p>
+        </div>
+        <div class="card">
+            <h2>Simples</h2>
+            <p>Código comentado, pensado para quem está aprendendo Flexbox.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="coluna">
+        <h2>MeuSite</h2>
+        <p>Exemplo prático de layout com Flexbox.</p>
+    </div>
+    <div class="coluna meio">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+        </ul>
+    </div>
+    <div class="coluna">
+        <h2>Contato</h2>
+        <p>contato@meusite.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
