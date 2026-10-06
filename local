@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parque Centenário - Guia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="pg-local">
+
+<header>
+    <h1>Parque Centenário</h1>
+    <p class="subtitulo">Guia</p>
+    <nav aria-label="Seções">
+        <ul>
+            <li><a href="pagina-inicial.html">Início</a></li>
+            <li><a href="#sobre-local">Sobre o Local</a></li>
+            <li><a href="#informacoes">Informações</a></li>
+            <li><a href="#comodidades">Comodidades</a></li>
+            <li><a href="#proximo-eventos">Próximo Evento</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="sobre-local">
+        <h2>Sobre o Local</h2>
+        <p>O Parque Centenário é um dos principais espaços públicos de Mogi das Cruzes,
+        com áreas verdes, pista de caminhada e programação
+        cultural gratuita aos fins de semana.</p>
+        <blockquote>
+            <p>"É o lugar onde a cidade respira aos domingos."</p>
+        </blockquote>
+    </section>
+
+    <section id="informacoes">
+        <h2>Informações</h2>
+        <p>Funcionamento e avaliação do parque</p>
+        <div class="tabela-rolagem">
+            <table>
+                <thead>
+                    <tr><th>Item</th><th>Detalhe</th><th>Observação</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Funcionamento</td><td>Todos os dias</td><td>6h às 20h</td></tr>
+                    <tr><td>Entrada</td><td>Gratuita</td><td>Acesso livre</td></tr>
+                    <tr><td>Avaliação média</td><td>4,6 de 5</td><td>1.240 avaliações</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p><em>Atualizado em setembro de 2026</em></p>
+    </section>
+
+    <section id="comodidades">
+        <h2>Comodidades</h2>
+        <ul>
+            <li>Pista de caminhada e ciclovia</li>
+            <li>Playground infantil</li>
+            <li>Quiosques</li>
+            <li>Banheiros e bebedouros</li>
+        </ul>
+    </section>
+
+    <section id="proximo-eventos">
+        <h2>Festival de Música ao Ar Livre</h2>
+        <p>Apresentações</p>
+        <ul>
+            <li>Data: sábado, 20 de setembro</li>
+            <li>Horário: 15h às 21h</li>
+            <li>Entrada gratuita</li>
+        </ul>
+    </section>
+</main>
+
+<footer id="contato">
+    <h2>Contato</h2>
+    <p>Links úteis para planejar sua visita:</p>
+    <ul>
+        <li><a href="#">Ver no Mapa</a></li>
+        <li><a href="#">Instagram do Parque</a></li>
+        <li><a href="#">Sugerir Correção</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
