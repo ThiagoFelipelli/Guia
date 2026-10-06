@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="pg-vitrine">
-
 <header>
     <div class="logo">MeuSite</div>
     <nav aria-label="Menu principal">
